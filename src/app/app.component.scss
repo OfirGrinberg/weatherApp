@@ -1,0 +1,68 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  background: linear-gradient(70deg, deepskyblue, darkslateblue , grey);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form { margin-top: 2rem; }
+input,
+button {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px darkgray;
+  height: 1.8rem;
+}
+input {
+  background-color: hsl(208, 100%, 97%);
+  &:hover { background-color: hsl(208, 100%, 98%); }
+}
+button {
+  color: white;
+  background-color: hsl(219, 79%, 66%);
+  &:hover { background-color: hsl(219, 89%, 76%); }
+}
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px darkgray;
+  margin: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 45vh;
+  aspect-ratio: 3/4;
+  font-size: 1.25rem;
+}
+.top,
+.bottom {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+}
+.bottom { align-items: start; }
+.row {
+  flex-direction: row;
+  margin: 5px;
+}
+fa-icon { margin: 0 10px; }
+.gust-icon {
+  margin: 0 10px;
+  fa-icon { margin: 0; }
+}
+p { margin: 0; }
